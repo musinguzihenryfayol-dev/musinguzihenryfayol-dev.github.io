@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Henry Fayol – Frontend Developer and Video Editor Portfolio"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Henry Fayol | Creative Technologist</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- HERO / HOME SECTION -->
+    <main>
+      <section class="hero reveal">
+        <h1 class="brand-name">Hi, I'm Musinguzi Henry Fayol</h1>
+        <p class="role">Creative Technologist • Frontend & Video</p>
+        <p>
+          I combine coding, video editing, and photo editing to create clean
+          digital experiences.
+        </p>
+        <a href="#projects" class="btn">View My Work</a>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          I’m a creative technologist focused on building clean websites and
+          cinematic video content. I combine frontend development, video
+          editing, and emerging AI tools to create modern digital experiences. I
+          also enjoy teaching and sharing knowledge with others.
+        </p>
+      </section>
+
+      <!-- SKILLS SECTION -->
+      <section id="skills">
+        <h2>My Skills</h2>
+        <ul>
+          <li>Video Editing</li>
+          <li>Photo Editing</li>
+          <li>Coding (HTML, CSS, JavaScript....)</li>
+        </ul>
+      </section>
+
+      <!-- PROJECTS SECTION -->
+      <section id="about">
+        <h2>Projects</h2>
+        <section id="projects reveal" class="projects">
+          <div class="project-card">
+            <h3>Personal Portfolio Website</h3>
+            <p>
+              A responsive personal website to showcase my work, skills, and
+              interests.
+            </p>
+
+            <video class="project-video" controls>
+              <source
+                src="PixVerse_V5.6_Image_Text_360P_African_teenage_.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <div class="project-card">
+            <h3>Video Edit Showcase</h3>
+            <p>Cinematic edits and motion visuals.</p>
+
+            <video class="project-video" controls>
+              <source
+                src="PixVerse_V5.6_Image_Text_360P_A_BOY_aged16_on_.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+
+            <video class="project-video" controls>
+              <source
+                src="PixVerse_V5.6_Image_Text_360P_African_teenage_.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <div class="project-card">
+            <h3>Coming Soon</h3>
+            <p>More projects on the way.</p>
+          </div>
+        </section>
+      </section>
+
+      <!-- CONTACT SECTION -->
+
+      <section class="contact">
+        <h2>Contact</h2>
+        <p>
+          Available for collaborations, freelance work, and creative projects.
+        </p>
+        <p>Let’s connect and work together.</p>
+        <div class="contact-links">
+          <a href="mailto:musinguzihenryfayol@gmail.com">Email</a>
+          <a href="https://github.com/musinguzihenryfayol-dev" target="_blank"
+            >GitHub</a
+          >
+          <a
+            href="https://wa.me/256774792379?text=Hi%20Henry,%20I%20saw%20your%20portfolio
+"
+            target="_blank"
+            >WhatsApp</a
+          >
+        </div>
+      </section>
+
+      <script src="animations.js"></script>
+
+      <button id="themeToggle" aria-label="Toggle dark mode">
+        Change Theme color🌙
+      </button>
+
+      <script>
+        toggleBtn.addEventListener("click", () => {
+          document.body.classList.toggle("dark");
+        });
+      </script>
+
+      <script>
+        const toggleBtn = document.getElementById("themeToggle");
+
+        // Load saved theme
+        if (localStorage.getItem("theme") === "dark") {
+          document.body.classList.add("dark");
+        }
+
+        toggleBtn.addEventListener("click", () => {
+          document.body.classList.toggle("dark");
+
+          // Save theme
+          if (document.body.classList.contains("dark")) {
+            localStorage.setItem("theme", "dark");
+          } else {
+            localStorage.setItem("theme", "light");
+          }
+        });
+      </script>
+      <script src="script.js"></script>
+    </main>
+    <footer>
+      <p>© 2026 Henry Fayol</p>
+    </footer>
+  </body>
+</html>
